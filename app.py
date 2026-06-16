@@ -57,7 +57,7 @@ try:
         matriz_canciones = df_matriz.T 
         
         # =========================================================================
-        # NUEVO CORE DE ÁLGEBRA LINEAL: SVD ESTÁNDAR CON NUMPY
+        # ÁLGEBRA LINEAL: SVD CON NUMPY
         # =========================================================================
         # np.linalg.svd factoriza de forma exacta: Matriz = U * Sigma * Vt
         # full_matrices=False nos da la descomposición económica (m x k)
@@ -123,7 +123,7 @@ try:
         st.dataframe(df_reducido_ver, use_container_width=True)
         
         st.markdown("#### **3. Matriz de Similitud (Producto Punto: $U_k \\cdot U_k^T$)**")
-        st.write("Resultado de multiplicar los vectores reducidos para medir qué tan alineados están en el espacio.")
+        st.write("Resultado de multiplicar los vectores reducidos para medir qué tan alineados están.")
         st.dataframe(df_similitud, use_container_width=True)
 
 except FileNotFoundError:
